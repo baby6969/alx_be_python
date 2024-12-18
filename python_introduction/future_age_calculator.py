@@ -1,4 +1,4 @@
-user_current_age = input("How old are you?")
+user_current_age = int (input("How old are you?"))
 year_1=2050
 year_2=2023
 total_year=int(year_1-year_2)
