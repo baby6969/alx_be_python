@@ -1,6 +1,6 @@
-# num1 = int(input('plese inpute number:'))
-#num2 = int(input('plese inpute number:'))
-#operation = input('please write your opratopn add , sud , mult ,div:')
+num1 = int(input('plese inpute number:'))
+num2 = int(input('plese inpute number:'))
+operation = input('please write your opratopn add , sud , mult ,div:')
 # arithmetic_operations.py
 
 # arithmetic_operations.py
