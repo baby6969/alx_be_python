@@ -13,8 +13,8 @@ def perform_operation(num1, num2, operation):
     result = num1 * num2
     return result 
   if operation == 'divide':
-    result = num1 / num2  
+    result = num1 / num2 
+     if num2 == 0 : 
+       return 'can not be done'
     return result
-  if num2 == 0:
-    return 'can not be done'
 print( perform_operation(num1,num2,operation))
