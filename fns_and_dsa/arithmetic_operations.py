@@ -6,13 +6,15 @@ def perform_operation(num1, num2, operation):
   if operation == 'add':
     result = num1 + num2
     return result
-  if operation == 'sud':
+  if operation == 'subtract':
     result = num1 - num2
     return result
-  if operation == 'mult':
+  if operation == 'multiply':
     result = num1 * num2
     return result 
-  if operation == 'div':
+  if operation == 'divide':
     result = num1 / num2  
     return result
+  if num1/0:
+    return 'can not be done'
 print( perform_operation(num1,num2,operation))
