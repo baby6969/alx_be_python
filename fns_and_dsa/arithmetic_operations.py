@@ -1,18 +1,19 @@
 num1 = int(input('plese inpute number:'))
 num2 = int(input('plese inpute number:'))
 operation = input('please write your opratopn add , sud , mult ,div:')
-def perform_operation(num1,num2,operation):
+# arithmetic_operations.py
 
-  if operation == 'add':
-    result = num1 + num2
-    return result
-  if operation == 'sud':
-    result = num1 - num2
-    return result
-  if operation == 'mult':
-    result = num1 * num2
-    return result 
-  if operation == 'div':
-    result = num1 / num2  
-    return result
-print( perform_operation(num1,num2,operation))
+def perform_operation(num1: float, num2: float, operation: str):
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 == 0:
+            return "Error: Division by zero is not allowed."
+        return num1 / num2
+    else:
+        return "Error: Invalid operation."
+
