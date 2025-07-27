@@ -12,8 +12,10 @@ def perform_operation(num1, num2, operation):
   if operation == 'multiply':
     result = num1 * num2
     return result 
-  if operation == 'divide':
-     if num2 == 0 :
-       return 'can not divide the number'
-     return num1 / num2
+   elif operation == 'divide':
+        if num2 == 0:
+            return "Error: Division by zero is not allowed."
+        return num1 / num2
+    else:
+        return "Error: Invalid operation."
 print( perform_operation(num1,num2,operation))
